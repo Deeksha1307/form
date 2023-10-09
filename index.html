@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form</title>
+     </head>
+    <body>
+        <form action="message.html">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="sal">Salutation</label>
+                <select name="sal" id="sal">
+                  <option value="Mr.">Mr.</option>
+                  <option value="Mrs.">Mrs.</option>
+                  <option value="Dr.">Dr.</option>
+                  <option value="--none--">--none--</option>
+                 </select>
+                 <br><br>
+                 <label for="fname">Firstname</label>
+                 <input type="text" required id="fname" name="fname" pattern="[A-Za-z]{3,7}">
+                 <br><br>
+                 <label for="lname">lastname</label>
+                 <input type="text" required id="lname" name="lname" pattern="[A-Za-z]{3,7}">
+                 <br><br>
+                 <label for="contact">contact</label>
+                 <input type="text" required id="contact" name="contact" pattern="[6-9]{1}[0-9]{9}">
+                 <br><br>
+                 <label for="age">age</label>
+                 <input type="number" required id="age" name="age">
+                 <br><br>
+                 <label for="email">age</label>
+                 <input type="email" required id="email" name="email">
+                 <br><br>
+               
+                 <input typr="number" required id="age" name="age">
+                 <br><br>
+                 <label for="add">address</label>
+                 <br>
+                 <textarea name="add" required id="add" cols="30" rows="10"></textarea>
+            
+            </fieldset>
+            <fieldset>
+                <legend> Education Details</legend>
+                <label for=" ">Department</label>
+                 <br><br>
+                <input type="radio" required id="cs" name="dept">
+                <label for="cs">CS</label> 
+                <input type="radio" required id="Ec" name="dept">
+                <label for="ec">EC</label> 
+                <input type="radio" required id="civil" name="dept">
+                <label for="civil">EC</label> 
+                <input type="radio" required id="IS" name="dept">
+                <label for="IS">IS</label> 
+                <input type="radio" required id="mechanical" name="dept">
+                <label for="mechanical">mechanical</label> 
+                <br><br>
+                <label for="yop">Yog</label> 
+                <input list="Yog" required id="yop" name="yop">
+                <datalist id="Yog">
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                </datalist>
+                <br><br>
+                <label for=" ">Skills</label> 
+                <br><br>
+                <input type="checkbox" required id="html" name="html">
+                <label for="html ">html</label> 
+                <input type="checkbox" required id="css" name="css">
+                <label for="css ">css</label>
+                <input type="checkbox" required id="java" name="java">
+                <label for="java">java</label> 
+                <input type="checkbox" required id="sql" name="sql">
+                <label for="sql">sql</label>  
+
+            
+            
+            
+            
+            </fieldset>
+            <br><br>
+            <input type="submit">
+
+        </form>
+
+    </body>
+</html>
